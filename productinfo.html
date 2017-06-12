@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <script src="lib/flexible_css.js"></script>
+  <script src="lib/flexible.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/productinfo.css">
+</head>
+
+<body>
+  <!--头部logo-->
+  <header class="clearfix">
+    <div class="logo fl">
+      <a href="index.html">
+        <img src="images/header_logo.png" alt="慢慢买">
+      </a>
+    </div>
+    <div class="appdwn fr">
+      <a href="#">
+        <img src="images/header_app.png" alt="下载APP">
+      </a>
+    </div>
+  </header>
+  <!--搜索栏-->
+  <section class="search clearfix">
+    <div class="search-info">
+      <input type="search" name="" placeholder="搜索啊傻逼">
+    </div>
+    <div class="search-btn">
+      <button>搜索</button>
+    </div>
+  </section>
+  <!--标题栏-->
+  <section class="list-title clearfix">
+    <div class="list fl">
+
+    </div>
+    <button class="sxuan fr">筛选</button>
+  </section>
+
+  <!--内容栏-->
+  <main class="productlist">
+  </main>
+
+  <!--评论栏-->
+  <section class="product-cmt">
+
+  </section>
+
+  <!--更多优惠信息-->
+  <section class="more">
+    <a href="#">
+      <p>查看更多评价</p>
+    </a>
+  </section>
+  <!--login-->
+  <footer>
+    <div class="mf-btns">
+      <button class="login">登陆</button>
+      <button class="new-log">注册</button>
+      <button class="back"><img src="images/top.jpg" alt="">回到顶部</button>
+    </div>
+    <!--底部信息-->
+    <div class="mf-info">
+      <p>
+        <a href="#" style="color:red;">手机APP下载</a>
+        <a href="#" style="color:#000">慢慢买手机版</a>
+        <a href="#">--掌上比较平台</a>
+      </p>
+      <p>m.manmanbai.com</p>
+    </div>
+  </footer>
+</body>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/arttemplate/template.js"></script>
+<script id="title" type="text/html">
+  {{each result as value index}}
+  <a href="index.html">首页</a> >
+  <a href="category.html">全部分类</a> >
+  <a href="productlist.html?categoryid={{value.categoryId}}&pageid=1&category={{value.category}}">{{value.category}}</a>  > {{/each}}
+</script>
+
+<script id="proInfo" type="text/html">
+  {{each result as value index}}
+  <div class="info">
+    <p>{{value.productName}}</p>
+    {{#value.productImg}}
+    <a href="#">收藏</a>
+  </div>
+  <div class="info-nav clearfix">
+    <button class="fl w33 bj-search">比价搜索</button>
+    <button class="fl w33 parameter">产品参数</button>
+    <button class="fl w33 comment-btn">评价(222)</button>
+  </div>
+  <div class="friend-pce">
+    <div class="flink clearfix">
+      {{#value.bjShop}}
+      <hr>
+    </div>
+    <p>* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+  </div>
+  <div class="comment-title">
+    网友评价
+  </div>
+
+
+  {{/each}}
+
+</script>
+
+<script id="comment" type="text/html">
+  {{each result as value index}} 
+      <div class="comment">
+      <div class="source">
+        <div class="wymes clearfix">
+          <span>{{value.comName}}</span>
+          <div class="cmt-day fr">
+            <p>{{value.comTime}}</p>
+            <p>{{value.comFrom}}</p>
+          </div>
+        </div>
+        <p>{{value.comContent}}</p>
+      </div>
+    </div>
+
+  
+  {{/each}}
+</script>
+<script src="./js/Route.js"></script>
+<script src="./js/productinfo.js"></script>
+
+</html>

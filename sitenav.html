@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <script src="lib/flexible_css.js"></script>
+  <script src="lib/flexible.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="./css/sitenav.css">
+</head>
+
+<body>
+  <!--title-->
+  <header>
+    <a href="index.html" class="index"><</a>
+    <h1>商城导航</h1>
+    <a href="#" class="appDwn"><img src="./images/header_app.png" alt=""></a>
+  </header>
+
+  <!--内容栏-->
+  <main>
+  </main>
+
+
+
+  <!--login-->
+  <footer>
+    <div class="mf-btns">
+      <button class="login">登陆</button>
+      <button class="new-log">注册</button>
+      <button class="back"><img src="images/top.jpg" alt="">回到顶部</button>
+    </div>
+    <!--底部信息-->
+    <div class="mf-info">
+      <p>
+        <a href="#" style="color:red;">手机APP下载</a>
+        <a href="#" style="color:#000">慢慢买手机版</a>
+        <a href="#">--掌上比较平台</a>
+      </p>
+      <p>m.manmanbai.com</p>
+    </div>
+  </footer>
+</body>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/arttemplate/template.js"></script>
+
+<!--主体内容模板-->
+<script id='nav' type="text/html">
+  <ul class="clearfix">
+    {{each result as v i}}
+      <li class = "fl" data-id="{{v.navId}}">
+        <a href="{{v.navHref}}">
+          <img src="{{v.navImg}}" alt="">
+          <span>{{v.navTitle}}</span>
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+
+</script>
+
+<script src="./js/Route.js"></script>
+<script src="./js/sitenav.js"></script>
+
+</html>

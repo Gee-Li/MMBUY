@@ -1,0 +1,98 @@
+@import 'px2rem.less';
+section.list-title {
+    height: 70*@rem;
+    border: 1px solid #666;
+    background: linear-gradient(to bottom, #f3f3f3 0%, #DBDBDB 100%);
+    line-height: 70*@rem;
+    >.list {
+        text-indent: 15*@rem;
+        >a {
+            color: #000;
+        }
+    }
+    >.sxuan {
+        width: 125*@rem;
+        height: 56*@rem;
+        border: 1px solid #666;
+        .font-size(16);
+        background: linear-gradient(to bottom, #DBDBDB 0%, #F3F3F3 100%);
+        margin-top: 7*@rem;
+        line-height: 56*@rem;
+    }
+}
+
+main {
+    >.product {
+        height: 234*@rem;
+        padding: 0 30*@rem;
+        box-sizing: border-box;
+        border-bottom: 1px solid #666;
+        background-color: #fff;
+        >a{
+        >.pic {
+            float: left; 
+
+            >img {
+                width: 200*@rem;
+                margin: 0 auto;
+            }
+        }
+        >.product-info {
+            width: 465*@rem;
+            padding: 30*@rem 0 0;
+            box-sizing: border-box;
+            >p {
+                .font-size(14);
+                color: #000;
+            }
+            >span {
+                color: #f00;
+                .font-size(14);
+            }
+            >i {
+                .font-size(12);
+            }
+        }
+        }
+
+    }
+}
+
+section.page {
+    background-color: #fff;
+    text-align: center;
+    height: 90*@rem;
+    line-height: 90*@rem;
+    >div {
+        span {
+            display: inline-block;
+            box-sizing: border-box;
+            padding-top: 7*@rem;
+            >a {
+                display: inline-block;
+                border: 1px solid #666;
+                padding: 0;
+                width: 160*@rem;
+                height: 70*@rem;
+                line-height: 70*@rem;
+                color: #000;
+                background: linear-gradient(to bottom, #f1f1f1, #DBDBDB);
+                border-radius: 10*@rem;
+            }
+            >select {
+                width: 160*@rem;
+                height: 70*@rem;
+                padding-left: 50*@rem;
+                text-align: center;
+                border: 1px solid #000;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                border-radius: 10*@rem;
+                .font-size(16);
+                color: #000;
+                background: linear-gradient(to bottom, #f1f1f1, #DBDBDB);
+            }
+        }
+    }
+}

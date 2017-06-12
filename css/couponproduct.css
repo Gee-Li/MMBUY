@@ -1,0 +1,115 @@
+html,
+body {
+  background-color: #fff;
+}
+header {
+  height: 1.19997rem;
+  background-color: #F4483E;
+  position: relative;
+}
+header > .index {
+  position: absolute;
+  left: 0.26666rem;
+  top: 0.26666rem;
+  width: 0.66665rem;
+  height: 0.66665rem;
+  color: #fff;
+  line-height: 0.66665rem;
+}
+[data-dpr='1'] header > .index {
+  font-size: 40px;
+}
+[data-dpr='2'] header > .index {
+  font-size: 80px;
+}
+[data-dpr='3'] header > .index {
+  font-size: 120px;
+}
+header > h1 {
+  color: #fff;
+  text-align: center;
+  line-height: 1.19997rem;
+}
+[data-dpr='1'] header > h1 {
+  font-size: 24px;
+}
+[data-dpr='2'] header > h1 {
+  font-size: 48px;
+}
+[data-dpr='3'] header > h1 {
+  font-size: 72px;
+}
+header > .appDwn {
+  position: absolute;
+  width: 0.93331rem;
+  height: 0.93331rem;
+  right: 0.26666rem;
+  top: 0.13333rem;
+}
+main p {
+  text-align: center;
+  margin-top: 0.26666rem;
+}
+main ul {
+  margin-top: 0.53332rem;
+}
+main ul li {
+  padding: 0.26666rem;
+  border-bottom: 1px solid #ccc;
+}
+main ul li .info {
+  padding: 0.13333rem;
+  position: relative;
+}
+main ul li .info .pic {
+  width: 2.6666rem;
+  height: 2.13328rem;
+}
+main ul li .info .message {
+  width: 100%;
+  padding-left: 2.93326rem;
+  padding-right: 0.26666rem;
+  box-sizing: border-box;
+}
+main ul li .info .message p {
+  text-align: left;
+  line-height: 1.2em;
+  margin-bottom: 0.13333rem;
+}
+[data-dpr='1'] main ul li .info .message p {
+  font-size: 14px;
+}
+[data-dpr='2'] main ul li .info .message p {
+  font-size: 28px;
+}
+[data-dpr='3'] main ul li .info .message p {
+  font-size: 42px;
+}
+main ul li .info .message i {
+  color: #000;
+  font-weight: 700;
+}
+[data-dpr='1'] main ul li .info .message i {
+  font-size: 14px;
+}
+[data-dpr='2'] main ul li .info .message i {
+  font-size: 28px;
+}
+[data-dpr='3'] main ul li .info .message i {
+  font-size: 42px;
+}
+main ul li .info .message span {
+  display: block;
+  margin-top: 0.13333rem;
+  color: #EF7600;
+}
+main ul li .info a {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.53332rem;
+  height: 0.53332rem;
+  background: url(../images/arrow-right.svg);
+  background-size: 100%;
+}

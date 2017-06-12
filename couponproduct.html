@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <script src="lib/flexible_css.js"></script>
+  <script src="lib/flexible.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="./css/couponproduct.css">
+</head>
+
+<body>
+  <!--title-->
+  <header>
+    <a href="coupon.html" class="index">
+      <</a>
+        <h1>肯德基优惠券</h1>
+        <a href="#" class="appDwn"><img src="./images/header_app.png" alt=""></a>
+  </header>
+
+
+  <!--内容栏-->
+  <main>
+    <p>--点餐前出示手机中的优惠券,即可享受优惠--</p>
+    <ul>
+      <li>
+        <div class="info">
+          <div class="pic fl">
+            <img src="#" alt="">
+          </div>
+          <div class="message">
+            <p>阿斯蒂芬可怜氨基酸的浪费空间阿斯顿路口附近拉斯都快疯了卡三等奖付款拉斯江东父老空间按死定了付款阿斯顿凉快减肥卢卡斯的房间</p>
+            <i>￥ 28</i>
+            <span>有效期至10月31日</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <!--login-->
+  <footer>
+    <div class="mf-btns">
+      <button class="login">登陆</button>
+      <button class="new-log">注册</button>
+      <button class="back"><img src="images/top.jpg" alt="">回到顶部</button>
+    </div>
+    <!--底部信息-->
+    <div class="mf-info">
+      <p>
+        <a href="#" style="color:red;">手机APP下载</a>
+        <a href="#" style="color:#000">慢慢买手机版</a>
+        <a href="#">--掌上比较平台</a>
+      </p>
+      <p>m.manmanbai.com</p>
+    </div>
+  </footer>
+</body>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/arttemplate/template.js"></script>
+<!--title-->
+<script id='tpl' type="text/html">
+  {{each result as v i}}
+  <li>
+    <div class="info clearfix">
+      <div class="pic fl">
+        {{#v.couponProductImg}}
+      </div>
+      <div class="message">
+        <p>{{v.couponProductName}}</p>
+        <i>{{v.couponProductPrice}}</i>
+        <span>{{v.couponProductTime}}</span>
+      </div>
+      <a href="#"></a>
+    </div>
+  </li>
+
+
+
+  {{/each}}
+</script>
+
+<script src="./js/Route.js"></script>
+<script src="./js/couponproduct.js"></script>
+
+</html>

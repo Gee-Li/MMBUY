@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <script src="lib/flexible_css.js"></script>
+  <script src="lib/flexible.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="./css/moneyctrlinfo.css">
+</head>
+
+<body>
+  <!--title-->
+  <header>
+    <a href="moneyctrl.html" class="index">
+      <</a>
+        <h1>国内折扣</h1>
+        <a href="#" class="appDwn"><img src="./images/header_app.png" alt=""></a>
+  </header>
+
+  <!--主体内容-->
+
+  <main></main>
+
+
+  <!--login-->
+  <footer>
+    <div class="mf-btns">
+      <button class="login">登陆</button>
+      <button class="new-log">注册</button>
+      <button class="back"><img src="images/top.jpg" alt="">回到顶部</button>
+    </div>
+    <!--底部信息-->
+    <div class="mf-info">
+      <p>
+        <a href="#" style="color:red;">手机APP下载</a>
+        <a href="#" style="color:#000">慢慢买手机版</a>
+        <a href="#">--掌上比较平台</a>
+      </p>
+      <p>m.manmanbai.com</p>
+    </div>
+  </footer>
+</body>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/arttemplate/template.js"></script>
+
+<!--主体内容模板-->
+<script id="txt" type="text/html">
+  {{each result as value index}}
+  <h3 class="title">{{value.productName}}</h3>
+  <p class="author">{{value.productFrom}} {{value.productTime}} {{value.productTips}}</p>
+  <div class="cont">
+    <p>
+      {{#value.productImgSm}} {{value.productInfo2}}
+    </p>
+  </div>
+  <div class="lgpic">
+    {{#value.productImgLg}}
+  </div>
+  <div class="stock">{{#value.productCity}}</div>
+  <div class="gobuy">
+    <a href="#"><button>前往购买</button></a>
+  </div>
+  <img src="./images/mmbweixin2.png" alt="">
+  <div class="comment">{{#value.productComment}}</div>
+
+  {{/each}}
+
+</script>
+
+<script src="./js/Route.js"></script>
+<script src="./js/moneyctrlinfo.js"></script>
+
+</html>

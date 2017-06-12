@@ -1,0 +1,46 @@
+@import 'px2rem.less';
+main.m-category{
+  padding:10*@rem;
+  background-color: #eee;
+  >ul{
+    >li{
+      >.content-t{
+        background-color: #ddd;
+        >a{
+          float: right;
+          margin: 10*@rem 10*@rem;
+          >img{
+            width:40*@rem;
+            transform: rotateZ(90deg);
+          }
+        }
+        >h3{
+          .font-size(20);
+          height: 80*@rem;
+          line-height: 80*@rem;
+          text-indent: 20*@rem;
+        }
+      }
+      >.content-b{
+        display: none;
+        background-color: #fff;
+        >ul{
+          >li{
+            float: left;
+            width: 33.33%;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            >a{
+              display: inline-block;
+              width: 100%;
+              height: 78*@rem;
+              text-align: center;
+              line-height: 78*@rem;
+              .font-size(16);
+            }
+          }
+        }
+      }
+    }
+  }
+}

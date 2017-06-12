@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <script src="lib/flexible_css.js"></script>
+  <script src="lib/flexible.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <!--头部logo-->
+  <header class="clearfix">
+    <div class="logo fl">
+      <a href="index.html">
+        <img src="images/header_logo.png" alt="慢慢买">
+      </a>
+    </div>
+    <div class="appdwn fr">
+      <a href="#">
+        <img src="images/header_app.png" alt="下载APP">
+      </a>
+    </div>
+  </header>
+  <!--搜索栏-->
+  <section class="search clearfix">
+    <div class="search-info">
+      <input type="search" name="" placeholder="搜索啊傻逼">
+    </div>
+    <div class="search-btn">
+      <button>搜索</button>
+    </div>
+  </section>
+  <!--导航栏-->
+  <nav>
+    <ul class="clearfix">
+    </ul>
+  </nav>
+  <!--产品栏头部-->
+  <section class="product-title mtitle">
+    <p>超值折扣推荐</p>
+    <a href="#"><img src="images/more.png" alt=""></a>
+  </section>
+  <!--主体产品-->
+  <main class="product-cont">
+    <ul class="product">
+    </ul>
+  </main>
+  <!--更多优惠信息-->
+  <section class="more">
+    <a href="#">
+      <p>更多优惠信息>></p>
+    </a>
+  </section>
+
+  <!--品牌排行-->
+  <section class="pinpai mtitle">
+    <p>品牌排行</p>
+    <a href="#"><img src="images/more.png" alt=""></a>
+  </section>
+  <!--login-->
+  <footer>
+    <div class="mf-btns">
+      <button class="login">登陆</button>
+      <button class="new-log">注册</button>
+      <button class="back"><img src="images/top.jpg" alt="">回到顶部</button>
+    </div>
+    <!--底部信息-->
+    <div class="mf-info">
+      <p>
+        <a href="#" style="color:red;">手机APP下载</a>
+        <a href="#" style="color:#000">慢慢买手机版</a>
+        <a href="#">--掌上比较平台</a>
+      </p>
+      <p>m.manmanbai.com</p>
+    </div>
+  </footer>
+</body>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/arttemplate/template.js"></script>
+<!--模板引擎-->
+<script id="tpl" type="text/html">
+  {{each result as value index}}
+  <li>
+    <div class="nav-info  fl">
+      <a href="{{value.titlehref}}" index="{{value.indexmenuId}}">
+             {{#value.img}}
+             <p>{{value.name}}</p>
+          </a>
+    </div>
+  </li>
+  {{/each}}
+</script>
+<script id="moneyctrl" type="text/html">
+  {{each result as value index}}
+      <li>
+        <a href="moneyctrlinfo.html?productid={{value.productId}}" class="clearfix" ">
+          <div class="product-pic fl">
+            {{#value.productImgSm}}
+          </div>
+          <div class="product-info fl">
+            <div class="pro-t">
+              <p>{{value.productName}}</p>
+              <span>{{value.productPinkage}}</span>
+            </div>
+            <div class="pro-b">
+              <span>{{value.productFrom}}|{{value.productTime}}</span>
+              <span class="fr"><img src="images/comment.svg" alt=""> {{value.productComCount}}</span>
+            </div>
+          </div>
+        </a>
+      </li>
+  {{/each}}
+</script>
+<script src="./js/Route.js"></script>
+<script src="js/index.js"></script>
+
+</html>

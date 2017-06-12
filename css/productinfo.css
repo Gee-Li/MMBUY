@@ -1,0 +1,185 @@
+section.list-title {
+  height: 0.93331rem;
+  border: 1px solid #666;
+  background: linear-gradient(to bottom, #f3f3f3 0%, #dbdbdb 100%);
+  line-height: 0.93331rem;
+}
+section.list-title > .list {
+  text-indent: 0.199995rem;
+}
+section.list-title > .list > a {
+  color: #000;
+}
+section.list-title > .sxuan {
+  width: 1.666625rem;
+  height: 0.746648rem;
+  border: 1px solid #666;
+  background: linear-gradient(to bottom, #dbdbdb 0%, #f3f3f3 100%);
+  margin-top: 0.093331rem;
+  line-height: 0.746648rem;
+}
+[data-dpr='1'] section.list-title > .sxuan {
+  font-size: 16px;
+}
+[data-dpr='2'] section.list-title > .sxuan {
+  font-size: 32px;
+}
+[data-dpr='3'] section.list-title > .sxuan {
+  font-size: 48px;
+}
+main {
+  background-color: #fff;
+}
+main > .info {
+  padding: 0.53332rem;
+  position: relative;
+  box-sizing: border-box;
+}
+main > .info > p {
+  color: #000;
+  text-align: center;
+}
+[data-dpr='1'] main > .info > p {
+  font-size: 20px;
+}
+[data-dpr='2'] main > .info > p {
+  font-size: 40px;
+}
+[data-dpr='3'] main > .info > p {
+  font-size: 60px;
+}
+main > .info > img {
+  display: block;
+  margin: 0 auto;
+  width: 4.53322rem;
+}
+main > .info > a {
+  position: absolute;
+  display: block;
+  width: 1.06664rem;
+  height: 1.06664rem;
+  border: 1px solid #A1CD38;
+  background-color: #95D800;
+  border-radius: 50%;
+  right: 0.53332rem;
+  bottom: 0.53332rem;
+  text-align: center;
+  line-height: 1.06664rem;
+  color: #fff;
+}
+main > .info-nav {
+  border-top: 2px solid #BC3C00;
+  border-bottom: 2px solid #BC3C00;
+}
+main > .info-nav button {
+  height: 0.826646rem;
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+[data-dpr='1'] main > .info-nav button {
+  font-size: 16px;
+}
+[data-dpr='2'] main > .info-nav button {
+  font-size: 32px;
+}
+[data-dpr='3'] main > .info-nav button {
+  font-size: 48px;
+}
+main > .info-nav > .bj-search {
+  background-color: #FF9F23 !important;
+}
+main > .info-nav > .parameter {
+  border-right: 2px solid #BC3C00;
+  border-left: 2px solid #BC3C00;
+}
+main > .info-nav > .parameter,
+main > .info-nav .comment-btn {
+  background: linear-gradient(to bottom, #ffd14e, #ffbe0d);
+}
+main > .friend-pce {
+  border-bottom: 5px solid #757575;
+}
+main > .friend-pce > .flink {
+  padding: 0.39999rem 0.13333rem;
+}
+main > .friend-pce > .flink > table {
+  height: 1.19997rem;
+}
+main > .friend-pce > .flink > table tr > td:first-child {
+  text-align: center;
+}
+main > .friend-pce > .flink > table tr > td:first-child a {
+  display: inline-block;
+  width: 0.466655rem;
+  margin-top: 0.26666rem;
+}
+[data-dpr='1'] main > .friend-pce > .flink > table tr > td:nth-child(2) a {
+  font-size: 16px;
+}
+[data-dpr='2'] main > .friend-pce > .flink > table tr > td:nth-child(2) a {
+  font-size: 32px;
+}
+[data-dpr='3'] main > .friend-pce > .flink > table tr > td:nth-child(2) a {
+  font-size: 48px;
+}
+main > .friend-pce > .flink > table tr > .red {
+  color: #BC3C00;
+  text-align: right;
+}
+[data-dpr='1'] main > .friend-pce > .flink > table tr > .red {
+  font-size: 16px;
+}
+[data-dpr='2'] main > .friend-pce > .flink > table tr > .red {
+  font-size: 32px;
+}
+[data-dpr='3'] main > .friend-pce > .flink > table tr > .red {
+  font-size: 48px;
+}
+main > .friend-pce > .flink > table tr > td:last-child {
+  width: 1.546628rem;
+}
+main > .friend-pce > .flink > table tr > td:last-child > span {
+  width: 100%;
+}
+main > .friend-pce > hr {
+  width: 100%;
+  height: 2px;
+}
+main > .friend-pce > p {
+  padding: 0.13333rem 0.26666rem;
+}
+main > .comment-title {
+  background-color: #DBDBDB;
+  text-align: center;
+  margin-top: 2px;
+  height: 0.879978rem;
+  line-height: 0.879978rem;
+}
+[data-dpr='1'] main > .comment-title {
+  font-size: 18px;
+}
+[data-dpr='2'] main > .comment-title {
+  font-size: 36px;
+}
+[data-dpr='3'] main > .comment-title {
+  font-size: 54px;
+}
+section.product-cmt {
+  background-color: #fff;
+}
+section.product-cmt > .comment > .source {
+  border-bottom: 1px solid #666;
+}
+section.product-cmt > .comment > .source > .wymes {
+  padding: 0.26666rem;
+}
+section.product-cmt > .comment > .source > .wymes > .cmt-day {
+  text-align: right;
+}
+section.product-cmt > .comment > .source > p {
+  padding: 0.13333rem;
+}
+section.more {
+  background-color: #fff;
+}

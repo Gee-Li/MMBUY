@@ -1,0 +1,89 @@
+@import 'px2rem';
+html,
+body {
+    background-color: #fff;
+}
+
+header {
+    height: 90*@rem;
+    background-color: #F4483E;
+    position: relative;
+    >.index {
+        position: absolute;
+        left: 20*@rem;
+        top: 20*@rem;
+        width: 50*@rem;
+        height: 50*@rem;
+        color: #fff;
+        .font-size(40);
+        line-height: 50*@rem;
+    }
+    >h1 {
+        color: #fff;
+        .font-size(24);
+        text-align: center;
+        line-height: 90*@rem;
+    }
+    >.appDwn {
+        position: absolute;
+        width: 70*@rem;
+        height: 70*@rem;
+        right: 20*@rem;
+        top: 10*@rem;
+    }
+}
+
+main {
+    p {
+        text-align: center;
+        margin-top: 20*@rem;
+    }
+    ul {
+        margin-top: 40*@rem;
+        li {
+            padding: 20*@rem ; // box-sizing: border-box;
+            border-bottom: 1px solid #ccc;
+            .info {
+                // height: 160*@rem;
+                padding: 10*@rem;
+                position: relative;
+                .pic {
+                    width: 200*@rem;
+                    height: 160*@rem;
+                }
+                .message {
+                    width: 100%;
+                    padding-left: 220*@rem;
+                    padding-right: 20*@rem;
+                    box-sizing: border-box;
+                    p {
+                        text-align: left;
+                        .font-size(14);
+                        line-height: 1.2em;
+                        margin-bottom: 10*@rem;
+                    }
+                    i {
+                        .font-size(14);
+                        color: #000;
+                        font-weight: 700;
+                    }
+                    span {
+                        display: block;
+                        margin-top: 10*@rem;
+                        color: #EF7600;
+                    }
+                }
+                a {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 40*@rem;
+                    height: 40*@rem;
+                    background: url(../images/arrow-right.svg);
+                    background-size: 100%;
+                }
+            }
+        }
+    }
+}

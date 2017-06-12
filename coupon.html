@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <script src="lib/flexible_css.js"></script>
+  <script src="lib/flexible.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="./css/coupon.css">
+</head>
+
+<body>
+  <!--title-->
+  <header>
+    <a href="index.html" class="index">
+      <</a>
+        <h1>优惠券</h1>
+        <a href="#" class="appDwn"><img src="./images/header_app.png" alt=""></a>
+  </header>
+
+
+  <!--内容栏-->
+  <main>
+    <ul class="clearfix">
+      <li class="fl">
+        <a href="#">
+          <img src="#" alt="">
+          肯德基
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <!--login-->
+  <footer>
+    <div class="mf-btns">
+      <button class="login">登陆</button>
+      <button class="new-log">注册</button>
+      <button class="back"><img src="images/top.jpg" alt="">回到顶部</button>
+    </div>
+    <!--底部信息-->
+    <div class="mf-info">
+      <p>
+        <a href="#" style="color:red;">手机APP下载</a>
+        <a href="#" style="color:#000">慢慢买手机版</a>
+        <a href="#">--掌上比较平台</a>
+      </p>
+      <p>m.manmanbai.com</p>
+    </div>
+  </footer>
+</body>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/arttemplate/template.js"></script>
+<!--title-->
+<script id='txt' type="text/html">
+  {{each result as v i}}
+  <li class="fl">
+    <a href="{{v.couponLink}}?couponid={{v.couponId}}">
+          <img src="{{v.couponImg}}" alt="">
+          {{v.couponTitle}}
+        </a>
+  </li>
+
+  {{/each}}
+
+</script>
+
+<script src="./js/Route.js"></script>
+<script src="./js/coupon.js"></script>
+
+</html>

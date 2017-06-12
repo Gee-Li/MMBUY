@@ -1,0 +1,55 @@
+main.m-category {
+  padding: 0.13333rem;
+  background-color: #eee;
+}
+main.m-category > ul > li > .content-t {
+  background-color: #ddd;
+}
+main.m-category > ul > li > .content-t > a {
+  float: right;
+  margin: 0.13333rem 0.13333rem;
+}
+main.m-category > ul > li > .content-t > a > img {
+  width: 0.53332rem;
+  transform: rotateZ(90deg);
+}
+main.m-category > ul > li > .content-t > h3 {
+  height: 1.06664rem;
+  line-height: 1.06664rem;
+  text-indent: 0.26666rem;
+}
+[data-dpr='1'] main.m-category > ul > li > .content-t > h3 {
+  font-size: 20px;
+}
+[data-dpr='2'] main.m-category > ul > li > .content-t > h3 {
+  font-size: 40px;
+}
+[data-dpr='3'] main.m-category > ul > li > .content-t > h3 {
+  font-size: 60px;
+}
+main.m-category > ul > li > .content-b {
+  display: none;
+  background-color: #fff;
+}
+main.m-category > ul > li > .content-b > ul > li {
+  float: left;
+  width: 33.33%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+main.m-category > ul > li > .content-b > ul > li > a {
+  display: inline-block;
+  width: 100%;
+  height: 1.039974rem;
+  text-align: center;
+  line-height: 1.039974rem;
+}
+[data-dpr='1'] main.m-category > ul > li > .content-b > ul > li > a {
+  font-size: 16px;
+}
+[data-dpr='2'] main.m-category > ul > li > .content-b > ul > li > a {
+  font-size: 32px;
+}
+[data-dpr='3'] main.m-category > ul > li > .content-b > ul > li > a {
+  font-size: 48px;
+}

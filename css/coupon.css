@@ -1,0 +1,77 @@
+html,
+body {
+  background-color: #fff;
+}
+header {
+  height: 1.19997rem;
+  background-color: #F4483E;
+  position: relative;
+}
+header > .index {
+  position: absolute;
+  left: 0.26666rem;
+  top: 0.26666rem;
+  width: 0.66665rem;
+  height: 0.66665rem;
+  color: #fff;
+  line-height: 0.66665rem;
+}
+[data-dpr='1'] header > .index {
+  font-size: 40px;
+}
+[data-dpr='2'] header > .index {
+  font-size: 80px;
+}
+[data-dpr='3'] header > .index {
+  font-size: 120px;
+}
+header > h1 {
+  color: #fff;
+  text-align: center;
+  line-height: 1.19997rem;
+}
+[data-dpr='1'] header > h1 {
+  font-size: 24px;
+}
+[data-dpr='2'] header > h1 {
+  font-size: 48px;
+}
+[data-dpr='3'] header > h1 {
+  font-size: 72px;
+}
+header > .appDwn {
+  position: absolute;
+  width: 0.93331rem;
+  height: 0.93331rem;
+  right: 0.26666rem;
+  top: 0.13333rem;
+}
+main ul {
+  padding: 0.26666rem 0;
+}
+main ul li {
+  width: 2.6666rem;
+  border: 1px solid #ccc;
+  margin: 0.13333rem;
+}
+main ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 0.13333rem;
+}
+[data-dpr='1'] main ul li a {
+  font-size: 14px;
+}
+[data-dpr='2'] main ul li a {
+  font-size: 28px;
+}
+[data-dpr='3'] main ul li a {
+  font-size: 42px;
+}
+main ul li a img {
+  width: 1.359966rem;
+  height: 1.359966rem;
+  margin: 0.13333rem auto 0.066665rem;
+}

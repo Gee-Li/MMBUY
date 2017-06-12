@@ -1,0 +1,107 @@
+html,
+body {
+  background-color: #fff;
+}
+nav {
+  padding-top: 0.26666rem;
+  padding-bottom: 0.13333rem;
+  background-color: #fff;
+}
+nav > ul > li {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+}
+nav > ul > li > .nav-info {
+  width: 1.906619rem;
+  margin: 0.199995rem 0.26666rem;
+  margin: 0 auto;
+}
+nav > ul > li > .nav-info > a > img {
+  width: 1.3333rem;
+  margin: 0 auto;
+}
+nav > ul > li > .nav-info > a > p {
+  margin-top: 0.173329rem;
+  text-align: center;
+}
+[data-dpr='1'] nav > ul > li > .nav-info > a > p {
+  font-size: 12px;
+}
+[data-dpr='2'] nav > ul > li > .nav-info > a > p {
+  font-size: 24px;
+}
+[data-dpr='3'] nav > ul > li > .nav-info > a > p {
+  font-size: 36px;
+}
+section.mtitle {
+  background-color: #FF841D;
+  height: 0.93331rem;
+  box-sizing: border-box;
+  padding: 0 0.26666rem;
+  margin-top: 0.13333rem;
+}
+section.mtitle > p {
+  float: left;
+  color: #fff;
+  margin: 0.26666rem 0;
+}
+[data-dpr='1'] section.mtitle > p {
+  font-size: 12px;
+}
+[data-dpr='2'] section.mtitle > p {
+  font-size: 24px;
+}
+[data-dpr='3'] section.mtitle > p {
+  font-size: 36px;
+}
+section.mtitle > a {
+  float: right;
+  color: #fff;
+  width: 0.53332rem;
+  height: 0.53332rem;
+  margin: 0.173329rem 0;
+}
+main > .product > li {
+  background-color: #fff;
+  padding: 0.26666rem;
+  border-bottom: 0.026666rem solid #f1f1f1;
+  height: 3.399915rem;
+}
+main > .product > li > a {
+  display: block;
+  width: 100%;
+}
+main > .product > li > a > .product-pic {
+  width: 2.93326rem;
+}
+main > .product > li > a > .product-pic > img {
+  margin: 0 auto;
+}
+main > .product > li > a > .product-info {
+  width: 6.39984rem;
+}
+main > .product > li > a > .product-info > .pro-t {
+  height: 1.99995rem;
+}
+main > .product > li > a > .product-info > .pro-t > p {
+  color: #000;
+}
+[data-dpr='1'] main > .product > li > a > .product-info > .pro-t > p {
+  font-size: 14px;
+}
+[data-dpr='2'] main > .product > li > a > .product-info > .pro-t > p {
+  font-size: 28px;
+}
+[data-dpr='3'] main > .product > li > a > .product-info > .pro-t > p {
+  font-size: 42px;
+}
+main > .product > li > a > .product-info > .pro-t > span {
+  color: #FF841D;
+}
+main > .product > li > a > .product-info > .pro-b > span > img {
+  display: inline-block;
+  width: 0.39999rem;
+  vertical-align: bottom;
+}

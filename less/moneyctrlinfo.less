@@ -1,0 +1,198 @@
+@import 'px2rem';
+header {
+    height: 90*@rem;
+    background-color: #FF841D;
+    position: relative;
+    >.index {
+        position: absolute;
+        left: 20*@rem;
+        top: 20*@rem;
+        width: 50*@rem;
+        height: 50*@rem;
+        color: #fff;
+        .font-size(40);
+        line-height: 50*@rem;
+    }
+    >h1 {
+        color: #fff;
+        .font-size(24);
+        text-align: center;
+        line-height: 90*@rem;
+    }
+    >.appDwn {
+        position: absolute;
+        width: 70*@rem;
+        height: 70*@rem;
+        right: 20*@rem;
+        top: 10*@rem;
+    }
+}
+
+// 内容栏
+main {
+    padding: 20*@rem 20*@rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    >.title {
+        .font-size(18);
+        color: #000;
+        font-weight: 700;
+    }
+    >.author {
+        margin: 20*@rem 10*@rem;
+        .font-size(12);
+    }
+    >.cont {
+        p {
+            .font-size(16);
+            img {
+                width: 240*@rem;
+                float: right;
+            }
+        }
+    }
+    >.lgpic {
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    >.stock {
+        >ul {
+            width: 270*@rem;
+            padding: 0 15*@rem;
+            margin: 0 auto;
+            li {
+                height: 36*@rem;
+                line-height: 36*@rem;
+                border-bottom: 1px dotted #ccc;
+                padding: 0 40*@rem;
+                a {
+                    .font-size(12);
+                    color: #000;
+                    span {
+                        strong {
+                            float: right;
+                            color: #F4887A;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >.gobuy {
+        text-align: center;
+        margin: 30*@rem 0 50*@rem;
+        a {
+            display: inline-block;
+            width: 670*@rem;
+            height: 60*@rem;
+            >button {
+                width: 100%;
+                height: 58*@rem;
+                border-radius: 10*@rem;
+                background-color: #FF9000;
+                border: 1px solid #FF7D03;
+                line-height: 60*@rem;
+                color: #fff;
+                .font-size(20);
+            }
+        }
+    }
+    >.comment {
+      margin-bottom: 40*@rem;
+        >.cu-content-pl {
+            .tit {
+                .font-size(18);
+                margin: 40*@rem 0 20*@rem;
+                color: #000;
+            }
+            >.reply {
+                >.form {
+                    font-size: 0;
+                    textarea {
+                        width: 100%;
+                        height: 140*@rem;
+                        border: 2px solid #eee;
+                        border-bottom: none;
+                        outline: 0;
+                        resize: none;
+                        .font-size(12);
+                    }
+                    .ctrl {
+                        width: 100%;
+                        height: 68*@rem;
+                        background-color: #FBFBFB;
+                        border: 2px solid #eee;
+                        border-top: 1px solid #eee;
+                        .tjdp {
+                            float: right;
+                            .font-size(18);
+                            height: 68*@rem;
+                            width: 200*@rem;
+                            border: 1px solid #FF7001;
+                            background-color: #FF841D;
+                            color: #fff;
+                            line-height: 68*@rem;
+                        }
+                    }
+                }
+            }
+            >.list {
+                li {
+                    display: list-item;
+                    padding: 20*@rem 30*@rem;
+                    .userimg {
+                        margin-top: 10*@rem;
+                        float: left;
+                        img {
+                            width: 80*@rem;
+                            height: 80*@rem;
+                            border-radius: 50%;
+                        }
+                    }
+                    .con {
+                        // float: right;
+                        padding-left: 120*@rem;
+                        width: 100%;
+                        box-sizing: border-box;
+                        .name {
+                            height: 50*@rem;
+                            line-height: 50*@rem;
+                            .username {
+                                .font-size(14);
+                                color: #5799CC;
+                                float: left;
+                            }
+                            .time {
+                                float: right;
+                                color: #ccc;
+                            }
+                        }
+                        .content {
+                            .font-size(14);
+                            line-height: 50*@rem;
+                            img {
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 40*@rem;
+                            }
+                            .yinyong{
+                              background-color: #FBFBFB;
+                              border: 1px solid #eee;
+                              padding: 8*@rem 10*@rem;  
+                              border-radius: 5*@rem;
+                              margin-top: 3*@rem;
+                              span{
+                                color:#5799CC;
+                                display: block;
+                                margin-bottom: 3*@rem;
+                                .font-size(12);
+                              }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
